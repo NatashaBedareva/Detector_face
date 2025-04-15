@@ -35,6 +35,20 @@ SCALE = 4
 self.net = cv2.dnn.readNet("yolov3.weights", "yolov3.cfg")
 ```
 
+## 🚀 Test
+
+Mashinelearning.ipynb производит тестирование модели.
+
+### Использование 
+
+Пропишите пути к директориям
+
+```commandline
+images=os.listdir('Images_of_faces')
+crop_images=os.listdir('Cropes_of_faces')
+image = PIL.Image.open(".../Cropes_of_faces/2025-04-01-16-25-52_Холл_ВКИ_(Активный)_Определение лиц.jpg")
+```
+
 ## 🚀 Pt2openVINO
 
 Для увелеяения скорости модели перевели веса из .pt в openVINO.
